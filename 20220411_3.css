@@ -1,0 +1,61 @@
+.card {
+  display: inline-block;
+  width: 70px;
+  height: 100px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  perspective: 150px;
+}
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: .8s;
+  transform-style: preserve-3d;
+}
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  backface-visibility: hidden;
+}
+.card-front {
+  background-color: navy;
+}
+.card-back {
+  transform: rotateY(180deg);
+}
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+#menu {
+  width: 100%;
+  border: 1px solid red;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#container {
+  width: calc(100vw * 0.9);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#subMenu1, #subMenu2, #subMenu3 {
+  display: inline-block;
+  margin: 10px 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+#subMenu1 {
+  background-color: aqua; 
+}
+#subMenu2 {
+  background-color: lightblue;
+}
+#subMenu3 {
+  background-color: aquamarine;
+}

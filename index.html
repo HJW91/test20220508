@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./20220411_3.css">
+  <script defer src="./20220411_3.js"></script>
+</head>
+<body>
+  
+  <div id="container">
+    <div id="menu">
+      <div id="subMenu1">
+        <label for="rdo1">같은 색상의 수 : </label>
+        <input type="radio" id="rdo1" name="colorSize" checked value="2">2개
+        <input type="radio" id="rdo2" name="colorSize" value="3">3개
+        <input type="radio" id="rdo3" name="colorSize" value="4">4개
+      </div>
+      <div id="subMenu2">
+        <label for="cardNum">카드 개수</label>
+        <input type="text" id="cardNum" placeholder="최대 32개까지만 입력하세요" value="10">
+      </div>
+      <div id="subMenu3">
+        <button id="btnStart">시작</button>
+      </div>
+    </div>
+    <div id="wrapper"></div>
+  </div>
+</body>
+</html>
